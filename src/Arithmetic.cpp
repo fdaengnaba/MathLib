@@ -8,3 +8,7 @@ int Arithmetic::gcd(int a, int b) {
     }
     return a;
 }
+
+int Arithmetic::lcm(int a, int b) {
+    return (a / gcd(a, b)) * b; // avoid integer overflow
+}
